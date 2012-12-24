@@ -5,8 +5,8 @@
  * License: GNU General Public License v2.0
  */
 
-#inlcude <iostream>
-#inlcude <string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
