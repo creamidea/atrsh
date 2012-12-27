@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1356596197 source:/home/allen/study/atrsh/FileSystemFuncs.cpp
+	<direct.h>
+	<unistd.h>
+	<stdlib.h>
+	<string>
+	<vector>
+	"FileSystemFuncs.hpp"
+
+1356599854 /home/allen/study/atrsh/FileSystemFuncs.hpp
+	<iostream>
+	<string>
+
+1356599987 source:/home/allen/study/atrsh/atrsh.cpp
+	<iostream>
+	<string>
+	"Commands.hpp"
+	"FileSystemFuncs.hpp"
+
+1356595549 /home/allen/study/atrsh/getCurrDir.hpp
+	<direct.h>
+	<unistd.h>
+	<string>
+
+1356595807 /home/allen/study/atrsh/getCurrWorkingDir.hpp
+	<direct.h>
+	<unistd.h>
+	<string>
+
+1356599999 source:/home/allen/study/atrsh/Commands.cpp
+	<iostream>
+	<string>
+	<vector>
+	"Commands.hpp"
+
+1356599854 /home/allen/study/atrsh/Commands.hpp
+	<string>
+

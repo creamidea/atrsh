@@ -8,8 +8,19 @@
 #include <iostream>
 #include <string>
 
+#include "Commands.hpp"
+#include "FileSystemFuncs.hpp"
+
 using namespace std;
 
 int main(int argc, char *argv[]){
+    while (true){
+        FileSystemFunc fs;
+        cout << fs.getCurrDir() << "#";
+
+        Commands cmd;
+        cmd.getCmdInput();
+        if (cmd.ifExit()){ break; } // exit by command "exit"
+    }
 	return 0;
 }
