@@ -1,20 +1,20 @@
 # depslib dependency file v1.0
-1356603566 source:/home/allen/study/atrsh/FileSystemFuncs.cpp
-	<direct.h>
+1356681559 source:/home/allen/study/atrsh/FileSystemFuncs.cpp
 	<unistd.h>
 	<stdlib.h>
 	<string>
 	<vector>
 	"FileSystemFuncs.hpp"
 
-1356599854 /home/allen/study/atrsh/FileSystemFuncs.hpp
+1356681559 /home/allen/study/atrsh/FileSystemFuncs.hpp
 	<iostream>
 	<string>
 
-1356599987 source:/home/allen/study/atrsh/atrsh.cpp
+1356681559 source:/home/allen/study/atrsh/atrsh.cpp
 	<iostream>
 	<string>
 	"Commands.hpp"
+	"Execute.hpp"
 	"FileSystemFuncs.hpp"
 
 1356595549 /home/allen/study/atrsh/getCurrDir.hpp
@@ -27,12 +27,25 @@
 	<unistd.h>
 	<string>
 
-1356600680 source:/home/allen/study/atrsh/Commands.cpp
+1356681559 source:/home/allen/study/atrsh/Commands.cpp
 	<iostream>
 	<string>
 	<vector>
 	"Commands.hpp"
 
-1356599854 /home/allen/study/atrsh/Commands.hpp
+1356681559 /home/allen/study/atrsh/Commands.hpp
 	<string>
+
+1356682135 source:/home/allen/study/atrsh/Execute.cpp
+	<string.h>
+	<unistd.h>
+	<fstream>
+	<iostream>
+	<string>
+	"Execute.hpp"
+
+1356681559 /home/allen/study/atrsh/Execute.hpp
+	<iostream>
+	<string>
+	"FileSystemFuncs.hpp"
 

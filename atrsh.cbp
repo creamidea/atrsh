@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="Commands.cpp" />
 		<Unit filename="Commands.hpp" />
+		<Unit filename="Execute.cpp" />
+		<Unit filename="Execute.hpp" />
 		<Unit filename="FileSystemFuncs.cpp" />
 		<Unit filename="FileSystemFuncs.hpp" />
 		<Unit filename="README.md" />

@@ -5,11 +5,7 @@
  * License: GNU General Public License v2.0
  */
 
-#ifdef WINDOWS
-    #include <direct.h>
-#else
-    #include <unistd.h>
-#endif
+#include <unistd.h>
 
 #include <stdlib.h>
 #include <string>
@@ -29,7 +25,8 @@ void FileSystemFunc::setGlobalPATHArry(){
     str_PATH += pattern;
     int size = str_PATH.size();
 
-    for (int i = 0; i < size; ++i){
+    int i = 0;
+    for (i = 0; i < size; ++i){
         pos = str_PATH.find(pattern, i);
         if (pos < size){
             string str = str_PATH.substr(i, pos - i);
@@ -38,10 +35,11 @@ void FileSystemFunc::setGlobalPATHArry(){
         }
     }
 
-    for (int i = 0; i < result.size(); ++i){
+    for (i = 0; i < result.size(); ++i){
         global_PATH[i] = result[i];
         //cout << result[i] << endl;
     }
+    path_count_ = i - 1;
 }
 
 string FileSystemFunc::getCurrWorkingDir(){
