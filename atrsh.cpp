@@ -5,6 +5,11 @@
  * License: GNU General Public License v2.0
  */
 
+#include <pthread.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
 #include <iostream>
 #include <string>
 
@@ -15,9 +20,10 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
+    cout << "#";
     while (true){
         FileSystemFunc fs;
-        cout << fs.getCurrDir() << "#";
+        //cout << fs.getCurrDir() << "#";
 
         Commands cmd;
         cmd.getCmdInput();
@@ -26,11 +32,23 @@ int main(int argc, char *argv[]){
         string *cmd_arry = cmd.getCmdArry();
         Execute exe;
         string cmd_path;
-        cout << "debug: cmd_path: " << cmd_path << endl; // debug line
-        if (exe.ifCmdExist(cmd_arry[0], fs, cmd_path)){ // KNOWN BUG: core dumped here
-            cout << "debug: cmd_path: " << cmd_path <<
-            exe.executeCmd(cmd_path, cmd_arry) << endl;
-            cout << endl;
+        if (exe.ifCmdExist(cmd_arry[0], fs, cmd_path)){
+            //pid_t pid;
+            //static pid_t exe_pid;
+            //if (pid = fork() == 0){
+                //exe_pid = getpid();
+                cout << endl;
+                exe.executeCmd(cmd_path, cmd_arry);
+                cout << endl;
+                //cout << fs.getCurrDir() << "#";
+                //kill(exe_pid, SIGCONT);
+            //} else if (pid = fork() < 0){
+            //    cout << "Execute ERROR." << endl;
+            //    return -1;
+            //} else {
+            //    exe_pid = getpid();
+                //pause();
+            //}
         } else {
             cout << "Command not Found." << endl;
         }

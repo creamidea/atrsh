@@ -21,7 +21,7 @@ public:
     bool ifExit();
     void getCmdInput();
 private:
-    string cmd_arg[32]; // every argument in a line, 32 in max
+    string cmd_arg[32]; // every argument in a line, 32 arguments in max
     //string cmd_line;    // the full cmd in one string
     //string formatCmd2Line();
 };

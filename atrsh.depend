@@ -10,7 +10,11 @@
 	<iostream>
 	<string>
 
-1356681559 source:/home/allen/study/atrsh/atrsh.cpp
+1356761673 source:/home/allen/study/atrsh/atrsh.cpp
+	<pthread.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<unistd.h>
 	<iostream>
 	<string>
 	"Commands.hpp"
@@ -33,18 +37,22 @@
 	<vector>
 	"Commands.hpp"
 
-1356681559 /home/allen/study/atrsh/Commands.hpp
+1356750030 /home/allen/study/atrsh/Commands.hpp
 	<string>
 
-1356682135 source:/home/allen/study/atrsh/Execute.cpp
+1356761580 source:/home/allen/study/atrsh/Execute.cpp
+	<pthread.h>
+	<signal.h>
 	<string.h>
+	<sys/types.h>
+	<sys/wait.h>
 	<unistd.h>
 	<fstream>
 	<iostream>
 	<string>
 	"Execute.hpp"
 
-1356681559 /home/allen/study/atrsh/Execute.hpp
+1356757681 /home/allen/study/atrsh/Execute.hpp
 	<iostream>
 	<string>
 	"FileSystemFuncs.hpp"

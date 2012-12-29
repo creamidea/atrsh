@@ -20,8 +20,9 @@ public:
     Execute(){}
 
     bool ifCmdExist(string cmd, FileSystemFunc &fs, string &cmd_path);
-    int executeCmd(string cmd_path, string cmd_argv[]);
+    void executeCmd(string cmd_path, string cmd_argv[]);
 private:
+
 };
 
 
