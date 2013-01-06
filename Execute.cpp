@@ -1,7 +1,7 @@
 /* This file is part of atrsh, A shell written in C++
  * By: Allen Zhong (AstroProfundis) <allen@mail.atr.me>
  * File Created: Dec 28, 2012
- * Last Changed: Dec 29, 2012
+ * Last Changed: Jan 06, 2013
  * License: GNU General Public License v2.0
  */
 
@@ -61,7 +61,7 @@ void Execute::executeCmd(string cmd_path, string cmd_argv[]){
         strcpy(c_cmd_argv[i - 1], cmd_argv[i].c_str());
     }
 
-    cout << "Now Executing: " << c_cmd_path << endl;
+    //cout << "Now Executing: " << c_cmd_path << endl;
 
     pid_t pid = fork();
     if (pid < 0){ // KNOWN BUG: threads messed up
@@ -74,5 +74,4 @@ void Execute::executeCmd(string cmd_path, string cmd_argv[]){
     } else {
         ;
     }
-    //execvp(c_cmd_argv[0], c_cmd_argv);
 }

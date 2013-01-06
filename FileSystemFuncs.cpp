@@ -1,7 +1,7 @@
 /* This file is part of atrsh, A shell written in C++
  * By: Allen Zhong (AstroProfundis) <allen@mail.atr.me>
  * File Created: Dec 27, 2012
- * Last Changed: Dec 27, 2012
+ * Last Changed: Jan 06, 2013
  * License: GNU General Public License v2.0
  */
 
@@ -37,7 +37,6 @@ void FileSystemFunc::setGlobalPATHArry(){
 
     for (i = 0; i < result.size(); ++i){
         global_PATH[i] = result[i];
-        //cout << result[i] << endl;
     }
     path_count_ = i - 1;
 }

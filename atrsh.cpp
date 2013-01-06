@@ -1,7 +1,7 @@
 /* This file is part of atrsh, A shell written in C++
  * By: Allen Zhong (AstroProfundis) <allen@mail.atr.me>
  * File Created: Dec 24, 2012
- * Last Changed: Dec 29, 2012
+ * Last Changed: Jan 06, 2013
  * License: GNU General Public License v2.0
  */
 
@@ -23,7 +23,6 @@ int main(int argc, char *argv[]){
     cout << "#";
     while (true){
         FileSystemFunc fs;
-        //cout << fs.getCurrDir() << "#";
 
         Commands cmd;
         cmd.getCmdInput();
@@ -33,10 +32,10 @@ int main(int argc, char *argv[]){
         Execute exe;
         string cmd_path;
         if (exe.ifCmdExist(cmd_arry[0], fs, cmd_path)){
-                cout << endl;
+                //cout << endl;
                 exe.executeCmd(cmd_path, cmd_arry);
-                cout << endl;
-        } else {
+                //cout << endl;
+        } else { // KNOWN BUG: cmd_arry not emptied when command has argv
             cout << "Command not Found." << endl;
         }
     }
