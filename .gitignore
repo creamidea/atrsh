@@ -15,3 +15,6 @@ obj
 *.lai
 *.la
 *.a
+
+*.swo
+*.swp
